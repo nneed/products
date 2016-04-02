@@ -1,0 +1,51 @@
+{
+    "name": "Nneed/Products",
+    "type": "library",
+    "description": "Products manager",
+    "keywords": [
+        "Nneed",
+        "Products"
+    ],
+    "homepage": "https://github.com/Nneed/Products",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nneed",
+            "email": "n.need@mail.ru",
+            "homepage": "https://github.com/nneed/products",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.2",
+        "php" : ">=5.4.0",
+        "kalnoy/nestedset": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "classmap": [
+            "src/Http/Controllers"
+        ],
+        "psr-4": {
+            "Nneed\\Products\\": "src/",
+            "Nneed\\Products\\Http\\Controllers\\": "src/Http/Controllers/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nneed\\Products\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
